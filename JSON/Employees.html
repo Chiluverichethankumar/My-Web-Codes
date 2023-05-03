@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><title>Chethan kumar</title></head>
+<body>
+
+<h1>Employee conversion of string to data</h1>
+<p id="Chethan"></p>
+<p id="kumar"></p>
+<p id="revathi"></p>
+<h1>Employee  Conversion of string to data</h1>
+<p id="10024"></p>
+
+
+<script>
+let emp = '{"employees":[' +'{"Name":"Chethan","age":21,"Salar":100000,"location":"hyd"},' +'{"Name":"Revathi","age":21,"Salar":500000,"location":"vij"},' +'{"Name":"Satwika","age":21,"Salar":600000,"location":"hyd"}]}';
+
+const obj = JSON.parse(emp);
+
+document.getElementById("Chethan").innerHTML ="Name -: " +
+obj.employees[0].Name +"----"+"age -: " + obj.employees[0].age+"----"+"Salar -: "+ obj.employees[0].Salar+"----"+"location -: " +obj.employees[0].location;
+
+
+document.getElementById("kumar").innerHTML ="Name -: " +
+obj.employees[1].Name +"----"+"age -: " + obj.employees[1].age+"----"+"Salar -: "+ obj.employees[1].Salar+"----"+"location -: " +obj.employees[1].location;
+
+
+
+document.getElementById("revathi").innerHTML ="Name -: " +
+obj.employees[2].Name +"----"+"age -: " + obj.employees[2].age+"----"+"Salar -: "+ obj.employees[2].Salar+"----"+"location -: " +obj.employees[2].location;
+
+
+document.write("<br>");
+
+
+let emp1 = {employees1:[
+{Name:"Chethan",age:21,Salar:100000,location:"hyd"}, +
+{Name:"Revathi","age":21,Salar:500000,location:"vij"}, +
+{Name:"Satwik",age:21,Salar:600000,location:"hyd"}]};
+
+const obj1 = JSON.stringify(emp1);
+document.getElementById("10024").innerHTML =obj1;
+
+
+document.write("<br>");
+</script>
+
+</body>
+</html>

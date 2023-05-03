@@ -1,0 +1,36 @@
+book-info
+{
+display:block;
+}
+book
+{
+display:block;
+font-size:14pt;
+}
+Title-of-the-book
+{ display:block;
+font-family:times new roman;
+color:"green";
+font-weight:bold;
+font-size:25pt;
+}
+Author-name
+{ display:block;
+font-family:coppergatholic bold;
+color:magenta;
+font-size:20pt;
+}
+Publications,ISBN-number
+{ display:block;
+font-family:Monotypeorsiva;
+color:pink;
+font-size:15pt;
+margin-left:03pt;
+}
+Edition,Price
+{ display:block;
+font-family:arial;
+color:orange;
+font-size:03pt;
+margin-left:20pt;
+}

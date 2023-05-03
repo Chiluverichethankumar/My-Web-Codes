@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Access Array Values</h2>
+<p id="demo"></p>
+
+<script>
+const myJSON = ''{"EName":["Chethan","revathi","Satwika"],
+                  "Eage":[21,21,21],
+                  "Esalary":[100000,200000,300000],
+                  "location":["hyd","vij","hyd"]}';
+const myObj = JSON.parse(myJSON);
+
+document.getElementById("demo").innerHTML =  myObj.EName;
+</script>
+
+</body>
+</html>

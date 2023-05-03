@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE student SYSTEM "external.dtd">
+<employee>
+<emp1>
+    <Ename>C.Chethankumar</Ename>
+    <Eid>222010310024</Eid>
+    <age>21</age>
+    <salary>1000000</salary>
+</emp1>
+
+<emp2>
+  <Ename>G.Revathi</Ename>
+  <Eid>222010310027</Eid>
+  <age>21</age>
+  <salary>300000</salary>
+</emp2>
+
+<emp3>
+  <Ename>N.Satwik</Ename>
+  <Eid>4433293</Eid>
+  <age>21</age>
+  <salary>600000</salary>
+</emp3>
+</employee>

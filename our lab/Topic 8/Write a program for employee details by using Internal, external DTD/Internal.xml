@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE student[
+<!ELEMENT student (Sname,Sid,age,salary)>
+<!ELEMENT Sname (#PCDATA)>
+<!ELEMENT Sid (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+
+<student>
+<std1>
+    <Sname>C.Chethankumar</Sname>
+    <Sid>222010310024</Sid>
+    <age>21</age>
+    <salary>1000000</salary>
+</std1>
+
+<std2>
+  <Sname>G.Revathi</Sname>
+  <Sid>222010310027</Sid>
+  <age>21</age>
+  <salary>300000</salary>
+</std2>
+
+<std3>
+  <Sname>N.Satwik</Sname>
+  <Sid>4433293</Sid>
+  <age>21</age>
+  <salary>600000</salary>
+</std3>
+</student>
