@@ -1,0 +1,5 @@
+<!ELEMENT employee (Ename,Eid,age,salary)>
+<!ELEMENT Ename (#PCDATA)>
+<!ELEMENT Eid (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>

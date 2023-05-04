@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<!DOCTYPE book-info SYSTEM "books.dtd">
+<book-info>
+<books>
+<Title-of-the-book>Html in 24 hrs</Title-of-the-book>
+<Author-name>Sam peter</Author-name>
+<ISBN-number>81-265-0146-4</ISBN-number>
+<Publications>Sam</Publications>
+<Edition>2nd</Edition>
+<Price>$40</Price>
+</books>
+
+<books>
+<Title-of-the-book>Circuit Design</Title-of-the-book>
+<Author-name>Wilson</Author-name>
+<ISBN-number>81-7722-151-5</ISBN-number>
+<Publications>Nownos</Publications>
+<Edition>3rd</Edition>
+<Price>$63</Price>
+</books>
+
+<books>
+<Title-of-the-book>Electrical engineering</Title-of-the-book>
+<Author-name>Darren Ashby</Author-name>
+<ISBN-number>81-265-0188-x</ISBN-number>
+<Publications>Nownos</Publications>
+<Edition>2nd</Edition>
+<Price>$35.5</Price>
+</books>
+
+<books>
+<Title-of-the-book>A civil Action</Title-of-the-book>
+<Author-name>Jonathan Harr</Author-name>
+<ISBN-number>81-7722-023-x</ISBN-number>
+<Publications>Pine Dealer</Publications>
+<Edition>1st</Edition>
+<Price>$50</Price>
+</books>
+</book-info>

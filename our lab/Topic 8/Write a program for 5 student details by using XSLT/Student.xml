@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/xsl" href="Student.xsl"?>
+<data>
+<student>
+     <firstname>Chethan</firstname>
+     <lastname>kumar.C</lastname>
+     <age>21</age>
+</student>
+<student>
+     <firstname>Revathi</firstname>
+     <lastname>G</lastname>
+     <age>21</age>
+</student>
+<student>
+     <firstname>Satwika</firstname>
+     <lastname>N</lastname>
+     <age>21</age>
+</student>
+<student>
+     <firstname>Rithwik</firstname>
+     <lastname>N</lastname>
+     <age>21</age>
+</student>
+<student>
+     <firstname>Venkata</firstname>
+     <lastname>Karthik</lastname>
+     <age>21</age>
+</student>
+</data>
