@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> array/conditional/loops(C.Chethankumar 10024)
+</title>
+</head>
+<body bgcolor="lightyellow">
+
+<center>
+<h1 style="color:green"><u>JavaScript Arrays</u></h1>
+</center>
+
+<p style="text-align:right"><u>Name </u>: C.Chethan Kumar</p>
+<p style="text-align:right"><u>PIn No </u>: 222010310024</p>
+
+
+
+
+<p id="Chethan"></p>
+
+
+
+
+<script>
+const Names = ["Chethan", "Sathwik", "Revathi"];
+document.write("<p>number in array--> "+Names+"</p>");
+document.write("<p></p>");
+document.write("<p>Accessing Array Elements at 0 --> "+Names[0]+"</p>");
+document.write("<p></p>");
+document.write("<p>Accessing Array Elements at 2 --> "+Names[2]+"</p>");
+document.write("<p></p>");
+Names[0]="Monkay";
+document.write("<p>Changing an Array Element of Chethan to Monkay --> "+Names[0]+"</p>");
+document.write("<p></p>");
+Names[4]="Chethan";
+document.write("<p>Adding new element to array as Chethan --> "+Names+"</p>");
+document.write("<p>length of array --> "+Names.length+"</p>")
+
+
+
+
+document.write("<center><p><h1><u>Conditional Statements</u></h1></p></center>");
+
+
+
+document.write("<p>If time is less than 10:00, create a Good morning greeting, if not, but time is less than 20:00, create a Good day greeting, otherwise a Good evening:</p>");
+
+
+document.write("greeting");
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+
+
+document.write("<center><p><h1><u>loops</u></h1></p></center>");
+
+
+
+
+document.write("<p><u>for loop</u></p>");
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.write(text);
+
+
+
+
+
+
+
+
+document.write("<p></p>");
+
+
+document.write("<p><u>For In Loop</u></p>");
+document.write("<p></p>");
+
+const person = {fname:"John", lname:"Doe", age:25}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.write(txt);
+
+
+document.write("<p></p>");
+
+
+document.write("<p><u>For Of Loop</u></p>");
+document.write("<p></p>");
+
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text1 = "";
+for (let x of cars) {
+  text1 += x + "<br>";
+}
+document.write(text1);
+
+
+
+
+document.write("<p></p>");
+
+
+document.write("<p><u>while loop</u></p>");
+document.write("<p></p>");
+
+
+
+let text2 = "";
+let j = 0;
+while (j < 10) {
+  text2 += "<br>The number is " + j;
+  j++;
+}
+document.write(text2);
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
