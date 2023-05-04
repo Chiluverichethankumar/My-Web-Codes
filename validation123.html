@@ -1,0 +1,265 @@
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: #181a1b;
+}
+html, body {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+  <title>Form Validation</title>
+  <style>
+  
+  </style><style class="darkreader darkreader--sync" media="screen"></style>
+  <script type="text/javascript">
+
+ function fval()
+    {
+  var regname= /^[a-zA-Z]+[a-zA-Z]+$/
+     var first=document.getElementById('first').value;
+     if(first=="")
+      document.getElementById('errFirst').innerHTML = "<span style='color:red'>Please enter your first name!</span>"; 
+      else if(first.length<6)
+        document.getElementById('errFirst').innerHTML = "<span style='color:red'>Please enter your first name minimum 6 characters!</span>"; 
+      else if(!regname.test(first))
+          document.getElementById('errFirst').innerHTML = "<span style='color:red'>Please enter your first name must be start with alphabets!</span>"; 
+      else 
+      document.getElementById('errFirst').innerHTML = ""; 
+              
+}
+   
+   function lval()
+    {
+     var last=document.getElementById('last').value;
+     if(last=="")
+       document.getElementById('errLast').innerHTML = "<span style='color:red'>Please enter your last name!</span>"; 
+     else
+   document.getElementById('errLast').innerHTML = ""; 
+         
+}
+  function eval()
+    {
+     var email=document.getElementById('email').value;
+     var atpos=email.indexOf("@");
+     var dotpos=email.lastIndexOf(".");
+     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+       document.getElementById('errEmail').innerHTML = "<span style='color: red'>Enter a valid email address!</span>";
+     else
+document.getElementById('errEmail').innerHTML = "";
+         
+}
+   function uval()
+    {
+     var uid=document.getElementById('uid').value;
+     if(uid=="")
+      document.getElementById('errUid').innerHTML = "<span style='color:red'>Please enter your user id!</span>"; 
+     else
+document.getElementById('errUid').innerHTML = ""; 
+     
+
+ }
+
+   function pval()
+    {
+     var password=document.getElementById('password').value;
+     var uid=document.getElementById('uid').value;
+     red = /[0-9]/;     
+     rel = /[a-z]/;
+     reu = /[A-Z]/; 
+     res = /[!@#\$%\^&\*]/
+   if(password=="")
+      document.getElementById('errPassword').innerHTML = "<span style='color:red'>Please enter your password!</span>"; 
+     else if(password.length < 6) 
+       document.getElementById('errPassword').innerHTML = "<span style='color:red'>Password must contain at least six characters!</span>"; 
+     else if(password == uid) 
+       document.getElementById('errPassword').innerHTML = "<span style='color:red'>Password must be different from Username!</span>";       
+     else if(!red.test(password))
+        document.getElementById('errPassword').innerHTML = "<span style='color:red'>password must contain at least one number (0-9)!</span>"; 
+     else if(!rel.test(password))
+       document.getElementById('errPassword').innerHTML = "<span style='color:red'>password must contain at least one lowercase letter (a-z)!</span>"; 
+    else if(!reu.test(password))
+        document.getElementById('errPassword').innerHTML = "<span style='color:red'>password must contain at least one uppercase letter (A-Z)!</span>"; 
+    else if(!res.test(password))
+        document.getElementById('errPassword').innerHTML = "<span style='color:red'>password must contain at least one special character!</span>"; 
+        
+else
+          document.getElementById('errPassword').innerHTML ="";
+}
+
+function cval()
+    {
+     var first = document.getElementById('password').value;
+     var second = document.getElementById('confirm').value;
+     if (second != first)
+      document.getElementById('errConfirm').innerHTML = "<span style='color: red'>Your passwords don't match!</span>";
+     else
+      document.getElementById('errConfirm').innerHTML = "";
+}
+function mval()
+    {
+     var mobile=document.getElementById('mobile').value;
+     if(mobile==""||mobile.length!=10||isNaN(mobile))
+      document.getElementById('errMobile').innerHTML = "<span style='color:red'>Please enter correct mobile number!</span>"; 
+     else
+       document.getElementById('errMobile').innerHTML = "";
+     }
+
+
+   </script>
+<meta name="darkreader" content="41b7ae4e467b415cbf8c6b25d88aa48e"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1 {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style></head>
+<body>
+    <form method="post" action="http://localhost:8080/examples/servlets/servlet/Retrieve1">
+<h1 align="center">Registration Form</h1>
+	<table align="center">
+
+      <tbody><tr>
+        <td>First Name:</td>
+        <td><input type="text" id="first" onblur="fval();"></td>
+        <td><div id="errFirst"></div></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" id="last" onblur="lval();"></td>
+        <td><div id="errLast"></div></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" id="email" onblur="eval();"></td>
+        <td><div id="errEmail"></div></td>
+      </tr>
+      <tr>
+        <td>User Id:</td>
+        <td><input type="text" id="uid" onblur="uval()"></td>
+        <td><div id="errUid"></div></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" id="password" onblur="pval();"></td>
+        <td><div id="errPassword"></div></td>
+      </tr>
+      <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" id="confirm" onblur="cval();"></td>
+        <td><div id="errConfirm"></div></td>
+      </tr>
+	<tr>
+        <td>Mobile Number:</td>
+        <td><input type="text" id="mobile" onblur="mval();"></td>
+        <td><div id="errMobile"></div></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" value="submit" onclick="mainfunction()"></td>
+        
+      </tr>
+	</tbody></table>
+      </form>
+
+
+</body></html>

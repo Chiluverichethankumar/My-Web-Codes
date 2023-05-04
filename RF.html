@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Form Validation</title>
+</head>
+<script type="text/javascript">
+function fval()
+{
+var first=document.getElementById('first').value;
+if(first=="")
+   document.getElementById('errFirst').innerHTML = "<spen style ='color:red'>Please enter you first name!</span>";
+else 
+   document.getElementById('errFirst').innerHTML="";
+
+}
+</script>
+
+<body>
+<h1> Registration From</h1>
+
+<table>
+<tr> 
+    <td>First Name:</td>
+    <td><input type="text" id="first" name="first" onblur="fval();"/></td>
+<td><div id="text" id="errfist"></div></td>
+</tr>
+
+</table>
+
+</body>
+</htnl>
