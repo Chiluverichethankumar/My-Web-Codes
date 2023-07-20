@@ -3,4 +3,4 @@ I practice all basic topics of HTML5: Basic syntax, HTML( document structure, te
 
 1. registrationform (by Using HTML ,CSS) : https://puwrei.csb.app/
 2. Video,Image,audio(by using HTML5) : https://0iskvw.csb.app/
-3. Online Registration Form to LEETCODE : https://etsjhv.csb.app/
+3. My Resume : https://etsjhv.csb.app/
